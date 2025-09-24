@@ -1,42 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sunil Shinde | Java Developer</title>
-  <meta name="description"
-    content="Java Developer Portfolio — Spring Boot, Microservices, Spring Security, JPA, Hibernate, MySQL" />
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
-  <link href="styles.css" rel="stylesheet" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vijaysing Dobhal | Flutter Developer Portfolio</title>
+  
+  <meta name="description" content="Portfolio of Vijaysing Dobhal, a skilled Flutter Developer with 2 years of experience building high-performance mobile apps for Android & iOS.">
+  <meta name="keywords" content="Flutter Developer, Mobile App Developer, Dart, Firebase, Vijaysing Dobhal, Portfolio">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="./styles.css">
 </head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="80">
 
-<body data-bs-spy="scroll" data-bs-target="#topNav" tabindex="0">
-
-<!-- NAVBAR -->
-<nav id="topNav" class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+  <!-- Custom Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
   <div class="container">
-    <a class="navbar-brand fw-semibold d-flex align-items-center" href="#home">
-      👋 <span class="ms-2 typing"></span>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+    <a class="navbar-brand" href="#home"><span class="nav-typing-effect"></span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div id="navMenu" class="collapse navbar-collapse">
-      <ul class="navbar-nav ms-auto gap-lg-3">
-        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#summary">Summary</a></li>
         <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
         <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="#certs">Certificates</a></li>
-        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        <li class="nav-item">
-          <a class="btn btn-primary btn-sm ms-lg-2" href="assets/Sunil_Shinde_Resume.pdf" target="_blank">
-            Download Resume
+
+        <!-- THEME TOGGLE SWITCH (New) -->
+        <li class="nav-item theme-switch-wrapper d-flex align-items-center">
+          <label class="theme-switch" for="theme-toggle">
+            <input type="checkbox" id="theme-toggle" />
+            <div class="slider round"></div>
+          </label>
+        </li>
+        
+        <li class="nav-item ms-lg-3">
+          <a class="btn btn-resume" href="https://drive.google.com/file/d/1oGRNSo3PBSnOPxjIVFzF373kgHt89j46/view?usp=drivesdk " target="_blank" rel="noopener noreferrer">
+            <span>Resume</span>
           </a>
         </li>
       </ul>
@@ -44,334 +52,204 @@
   </div>
 </nav>
 
+  <!-- Hero Section -->
+  <header id="home" class="hero-section d-flex align-items-center text-center">
+    <div class="aurora-background"></div>
+    <div class="container hero-content">
+      <img src="assets/profile.jpg" class="hero-photo" alt="Vijaysing Dobhal Profile Picture">
+      <h1 class="hero-name mt-4">Vijaysing Dobhal</h1>
+      <h2 class="hero-subtitle"><span class="typing-text"></span></h2>
+      <p class="hero-description mx-auto">I build high-performance, beautiful mobile applications for Android & iOS using Flutter.</p>
+      <a href="#projects" class="btn btn-primary btn-lg mt-3"><span>View My Work</span></a>
+    </div>
+  </header>
 
-
-<!-- HERO -->
-<header id="home" class="hero d-flex align-items-center">
-  <div class="container py-5">
-    <div class="row align-items-center g-4">
-      
-      <!-- Animated Intro Text -->
-      <div class="col-12 col-md-7 hero-text text-center text-md-start">
-        <h3 id="line1" class=" floating-text typed-cursor"></h3>
-        <h1 id="line2" class=" floating-text typed-cursor" style="color: rgb(225, 101, 101);">&nbsp;</h1>
-        <h2 id="line3" class=" floating-text typed-cursor" style="color: rgb(7, 164, 75);">&nbsp;&nbsp;&nbsp;&nbsp;</h2>
-
-        <h5 class="fw-bold mb-4 hero-subtitle">Spring Boot & Microservices Development</h5>
-        <p class="lead text-white-50 mb-4">
-          I build secure, scalable backend systems with Spring Boot (MVC, REST, Security, JPA) and MySQL — with hands-on microservices experience.
+  <!-- Professional Summary -->
+  <section id="summary" class="container py-5 animated-section fade-in">
+    <div class="text-center">
+        <h2 class="section-title">Professional Summary</h2>
+        <p class="section-subtitle mx-auto">
+          Flutter Developer with 2 years of experience building high-performance Android & iOS apps using Flutter, Dart, and Firebase. Skilled in REST API integration, state management (Provider, Riverpod, GetX), and payment gateways (Razorpay, Apple Pay). Experienced in crafting user-friendly, scalable, and production-ready applications.
         </p>
-
-        <div class="d-flex flex-wrap justify-content-center justify-content-md-start gap-3 mt-4">
-          <a href="#projects" class="btn btn-primary btn-lg">View My Projects</a>
-          <a href="#contact" class="btn btn-outline-light btn-lg">Contact Me</a>
-        </div>
-      </div>
-
-      <!-- Animated Profile Photo -->
-      <div class="col-12 col-md-5 text-center">
-        <img src="assets/profile.jpg" class="rounded-4 hero-photo floating img-fluid" alt="Sunil Shinde profile" />
-      </div>
-
-    </div>
-  </div>
-</header>
-
-
-
-
-  <!-- ABOUT -->
-  <section id="about" class="py-5 bg-body-tertiary fade-in-section">
-    <div class="container">
-      <div class="row g-4 align-items-center">
-        <div class="col-lg-6">
-          <h2 class="section-title">About Me</h2>
-          <p class="mb-2">I’m Sunil Shinde, a Java Developer focused on backend development with Spring Boot.</p>
-          <p class="mb-0">I have hands-on experience in Spring MVC, RESTful APIs, Spring Security, Spring Data JPA, Hibernate, and MySQL. I enjoy designing clean architectures, writing maintainable code, and delivering reliable features end-to-end.</p>
-          <ul class="list-unstyled mt-3">
-            <li><i class="fa-regular fa-circle-check me-2 text-primary"></i>MCA (2023–2025) — SIOM Pune</li>
-            <li><i class="fa-regular fa-circle-check me-2 text-primary"></i>BCA (2019–2022) — ITM Nanded</li>
-            <li><i class="fa-regular fa-circle-check me-2 text-primary"></i>Based in Pune, India</li>
-          </ul>
-        </div>
-        <div class="col-lg-6 fade-in-section">
-          <div class="card shadow-sm">
-            <div class="card-body">
-              <h5 class="fw-semibold">What I’m looking for</h5>
-              <p class="mb-0">Java/Spring Boot Developer roles where I can build RESTful backends, secure services, and microservices-based systems, and grow with an engineering-driven team.</p>
-            </div>
-          </div>
-          <div class="d-flex gap-3 mt-3">
-            <a href="assets/Sunil_Shinde_Resume.pdf" target="_blank" class="btn btn-primary">Download Resume</a>
-            <a href="#contact" class="btn btn-outline-secondary">Let’s Talk</a>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 
-  <!-- SKILLS -->
-  <section id="skills" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="section-title text-left mb-5">Technical Skills</h2>
-      <div class="skills-graph d-flex justify-content-center flex-wrap gap-4">
-        <div class="skill text-center">
-          <div class="bar" data-percent="95"></div>
-          <p>HTML5</p>
-        </div>
-        <div class="skill text-center">
-          <div class="bar" data-percent="85"></div>
-          <p>CSS3</p>
-        </div>
-        <div class="skill text-center">
-          <div class="bar" data-percent="80"></div>
-          <p>JavaScript</p>
-        </div>
-        <div class="skill text-center">
-          <div class="bar" data-percent="80"></div>
-          <p>Bootstrap</p>
-        </div>
-        <div class="skill text-center">
-          <div class="bar" data-percent="100"></div>
-          <p>Java</p>
-        </div>
-        <div class="skill text-center">
-          <div class="bar" data-percent="85"></div>
-          <p>SpringBoot</p>
-        </div>
-        <div class="skill text-center">
-          <div class="bar" data-percent="85"></div>
-          <p>Hibernate</p>
-        </div>
-        <div class="skill text-center">
-          <div class="bar" data-percent="90"></div>
-          <p>MySQL</p>
-        </div>
-        <div class="skill text-center">
-          <div class="bar" data-percent="70"></div>
-          <p>AWS</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- PROJECTS -->
-<section id="projects" class="py-5 bg-body-tertiary fade-in-section">
+<!-- Technical Skills -->
+<section id="skills" class="py-5 bg-dark-section animated-section fade-in">
   <div class="container">
-    <h2 class="section-title text-left mb-4">Projects</h2>
-    
-    <!-- Main Project Card -->
-    <div class="row g-4 align-items-stretch mb-1">
-      <div class="col-lg-12">
-        <div class="card project-card shadow-sm h-100">
-          <div class="row g-0">
-            <div class="col-md-5">
-              <img src="assets/projects/emts.jpg" class="img-fluid rounded-start h-100 w-100 object-fit-cover"
-                alt="Employee Task Management System" />
-            </div>
-            <div class="col-md-7">
-              <div class="card-body">
-                <div class="d-flex align-items-center justify-content-between mb-2">
-                  <h5 class="card-title mb-0">Employee Task Management System</h5>
-                  <span class="badge text-bg-primary">Spring Boot</span>
-                </div>
-                <p class="card-text small text-muted mb-2">Java, Spring Boot, Spring Security, Spring Data JPA,
-                  Thymeleaf, MySQL</p>
-                <p class="card-text">
-                  Role-based authentication (Admin/Employee), task creation & assignment, status tracking, dashboards,
-                  and secure REST endpoints using JWT. Data layer with JPA and a server-rendered UI via Thymeleaf.
-                </p>
-                <div class="d-flex gap-2">
-                  <a href="#" class="btn btn-outline-primary btn-sm disabled" tabindex="-1" aria-disabled="true">Live
-                    (soon)</a>
-                  <a href="https://github.com/sunilshinde1319/EmployeeTaskManagementSystem" class="btn btn-outline-secondary btn-sm" tabindex="-1">GitHub</a>
-                  <a href="assets/projects/etms-screens.pdf" class="btn btn-outline-dark btn-sm"
-                    target="_blank">Project_Report</a>
-                </div>
-              </div>
+      <h2 class="section-title">My Tech Stack</h2>
+      <div class="row text-center justify-content-center g-4">
+          <!-- Languages & Frameworks -->
+          
+          <!-- Corrected Flutter Icon -->
+          <div class="col-4 col-md-3 col-lg-2 animated-item">
+            <div class="skill-card" data-tilt>
+              <i class="fas fa-mobile-alt"></i> <!-- Changed from fab fa-flutter -->
+              <span>Flutter</span>
             </div>
           </div>
-        </div>
+          
+          <div class="col-4 col-md-3 col-lg-2 animated-item"><div class="skill-card" data-tilt><i class="fab fa-java"></i><span>Java</span></div></div>
+          <div class="col-4 col-md-3 col-lg-2 animated-item"><div class="skill-card" data-tilt><i class="fas fa-code"></i><span>Dart</span></div></div>
+          
+          <!-- Databases -->
+          <div class="col-4 col-md-3 col-lg-2 animated-item"><div class="skill-card" data-tilt><i class="fas fa-fire"></i><span>Firebase</span></div></div>
+          <div class="col-4 col-md-3 col-lg-2 animated-item"><div class="skill-card" data-tilt><i class="fas fa-database"></i><span>MySQL</span></div></div>
+          <div class="col-4 col-md-3 col-lg-2 animated-item"><div class="skill-card" data-tilt><i class="fas fa-leaf"></i><span>Supabase</span></div></div>
+          
+          <!-- State Management -->
+          <div class="col-4 col-md-3 col-lg-2 animated-item"><div class="skill-card" data-tilt><i class="fas fa-sitemap"></i><span>GetX</span></div></div>
+          <div class="col-4 col-md-3 col-lg-2 animated-item"><div class="skill-card" data-tilt><i class="fas fa-water"></i><span>Riverpod</span></div></div>
+          <div class="col-4 col-md-3 col-lg-2 animated-item"><div class="skill-card" data-tilt><i class="fas fa-cubes"></i><span>Provider</span></div></div>
+          
+          <!-- Tools & Platforms -->
+          <div class="col-4 col-md-3 col-lg-2 animated-item"><div class="skill-card" data-tilt><i class="fab fa-git-alt"></i><span>Git & GitHub</span></div></div>
+          <div class="col-4 col-md-3 col-lg-2 animated-item"><div class="skill-card" data-tilt><i class="fab fa-android"></i><span>Android Studio</span></div></div>
+          <div class="col-4 col-md-3 col-lg-2 animated-item"><div class="skill-card" data-tilt><i class="fab fa-figma"></i><span>Figma</span></div></div>
       </div>
-    </div>
-
-    <!-- Other Projects Grid -->
-    <div class="row g-4 mt-1">
-      <div class="col-md-6">
-        <div class="card project-card h-100 shadow-sm">
-          <img src="assets/projects/smarthub.jpg" class="card-img-top" alt="SmartAssignmentHub" />
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">SmartAssignmentHub (Online Assignment System)</h5>
-            <p class="card-text small text-muted">PHP, MySQL, HTML, CSS, JavaScript</p>
-            <p class="card-text flex-grow-1">Profiles, assignments, grades; secure data handling and efficient
-              server-side operations.</p>
-            <div class="d-flex gap-2">
-              <a href="https://github.com/sunilshinde1319" class="btn btn-outline-secondary btn-sm" tabindex="-1">GitHub</a>
-              <a href="assets/projects/smarthub-screens.pdf" class="btn btn-outline-dark btn-sm"
-                target="_blank">Project_Report</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6">
-        <div class="card project-card h-100 shadow-sm">
-          <img src="assets/projects/rapidwriter.jpg" class="card-img-top" alt="RapidWriterTest" />
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">RapidWriterTest (Typing Test System)</h5>
-            <p class="card-text small text-muted">Node.js, MongoDB, HTML, CSS</p>
-            <p class="card-text flex-grow-1">Dynamic interface, efficient server-side ops, flexible data management.
-            </p>
-            <div class="d-flex gap-2">
-              <a href="https://github.com/sunilshinde1319" class="btn btn-outline-secondary btn-sm" tabindex="-1">GitHub</a>
-              <a href="assets/projects/rapidwriter-screens.pdf" class="btn btn-outline-dark btn-sm"
-                target="_blank">Project_Report</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </section>
 
 
-  <!-- CERTIFICATES -->
-<section id="certs" class="py-5 fade-in-section">
-  <div class="container">
-    <h2 class="section-title text-center mb-4">Certificates</h2>
-
-    <!-- Row wrapper for all certificate cards -->
-    <div class="row g-4">
-      <!-- Card 1 -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Software Engineer</h5>
-            <p class="card-text text-muted">
-              <a href="https://www.hackerrank.com/certificates/c753c077ac71" target="_blank">Click</a> HackerRank
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Complete Python Developer Masterclass</h5>
-            <p class="card-text text-muted">
-              <a href="https://www.udemy.com/certificate/UC-f32a6f33-2e53-4c32-aa86-6e2f95e899d8/" target="_blank">Click</a> Udemy
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">R Programming</h5>
-            <p class="card-text text-muted">
-              <a href="https://www.linkedin.com/in/s2001/overlay/1727832743429/single-media-viewer/?profileId=ACoAADal9qsBW0SH6-lI9JsCRnQYbiG-fVjI5hU" target="_blank">Click</a> IIT Bombay
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 4 -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Advanced MySQL</h5>
-            <p class="card-text text-muted">
-              <a href="https://www.hackerrank.com/certificates/fe952c098557" target="_blank">Click</a> HackerRank
-            </p>
-          </div>
-        </div>
-      </div>
-    </div><!-- /row -->
-  </div><!-- /container -->
-</section>
-
-
-  <!-- EDUCATION -->
-  <section id="education" class="py-5 bg-body-tertiary fade-in-section">
-    <div class="container">
-      <h2 class="section-title text-center mb-4">Education</h2>
-      <!-- timeline same -->
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h6 class="mb-1">MCA — Sinhgad Institute Of Management (SIOM)</h6>
-            <p class="mb-0 text-muted">2023 – 2025 · Score: 75.81% · Pune, Maharashtra 411041</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h6 class="mb-1">BCA — Institute Of Technology And Management (ITM)</h6>
-            <p class="mb-0 text-muted">2019 – 2022 · Score: 81.19% · Nanded, India 431709</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h6 class="mb-1">HSC — Jawaharlal Nehru Vidhyalay</h6>
-            <p class="mb-0 text-muted">2019 · Score: 74.20% . Maharashtra Barbada 431709</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h6 class="mb-1">SSC — Jawaharlal Nehru Vidhyalay</h6>
-            <p class="mb-0 text-muted">2017 · Score: 79.80% . Maharashtra Barbada 431709</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-<!-- CONTACT -->
-<section id="contact" class="py-5 fade-in-section">
-  <div class="container">
-    <h2 class="section-title text-center mb-4">Contact Me</h2>
+<!-- Projects -->
+  <section id="projects" class="container py-5 animated-section fade-in">
+    <h2 class="section-title">Featured Projects</h2>
     <div class="row g-4 justify-content-center">
-      <div class="col-lg-6">
-        <div class="card h-100 shadow-sm text-center p-3">
-          <div class="card-body">
-            <h5 class="card-title mb-3">Let’s work together 🤝</h5>
-
-            <div class="contact-info text-start mb-3">
-              <p><i class="bi bi-envelope-fill"></i>Email: 
-                <a href="mailto:sunilshinde5699@gmail.com">sunilshinde5699@gmail.com</a></p>
-              <p><i class="bi bi-geo-alt-fill"></i>Location: Sinhgad Campus Vadgaon(STES), Pune, Maharashtra 411041</p>
-              <p><i class="bi bi-telephone-fill"></i>Phone: 
-                <a href="tel:+919527535063">+91 9527535063</a></p>
+      <!-- Project 1 -->
+      <div class="col-md-6 animated-item">
+        <div class="project-card" data-tilt>
+          <div class="mobile-frame-container">
+            <div class="mobile-frame">
+              <img src="assets/projects/erp.jpg" class="mobile-screenshot" alt="Online Munim App Screenshot">
+              <div class="phone-notch"></div>
             </div>
-
-            <div class="d-flex flex-column gap-2 social-links">
-              <a class="email" href="mailto:sunilshinde5699@gmail.com"><i class="bi bi-envelope-fill"></i>Send Email</a>
-              <a class="linkedin" href="https://linkedin.com/in/s2001" target="_blank"><i class="bi bi-linkedin"></i>LinkedIn</a>
-              <a class="github" href="https://github.com/sunilshinde1319" target="_blank"><i class="bi bi-github"></i>GitHub</a>
-            </div>
-
+          </div>
+          <div class="project-content">
+            <h5 class="project-title">Online Munim – ERP App</h5>
+            <p class="project-description">ERP billing solution with multi-branch support, barcode/RFID inventory, and GST reports. Integrated Razorpay & Apple Pay.</p>
+            <div class="project-tags"><span>Flutter</span><span>GetX</span><span>Firebase/SQL</span></div>
+            <a href="https://play.google.com/store/apps/details?id=com.omunim.online_munim_native" class="project-link" target="_blank">View Project <i class="fas fa-external-link-alt"></i></a>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+      <!-- Project 2 -->
+      <div class="col-md-6 animated-item">
+        <div class="project-card" data-tilt>
+          <div class="mobile-frame-container">
+            <div class="mobile-frame">
+              <img src="assets/projects/jwl.jpg" class="mobile-screenshot" alt="Jewellers App Screenshot">
+              <div class="phone-notch"></div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h5 class="project-title">Jewellers App – eCommerce</h5>
+            <p class="project-description">Product catalogue, daily gold/silver rates, EMIs, order tracking, and multi-location stock management.</p>
+            <div class="project-tags"><span>Flutter</span><span>REST API</span><span>Razorpay</span></div>
+            <a href="https://play.google.com/store/apps/details?id=com.omunim.jewellersapp&pcampaignid=web_share" class="project-link" target="_blank">View Project <i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="col-md-6 animated-item">
+        <div class="project-card" data-tilt>
+          <div class="mobile-frame-container">
+            <div class="mobile-frame">
+              <img src="assets/projects/linkHub.jpg" class="mobile-screenshot" alt="Linkhub App Screenshot">
+              <div class="phone-notch"></div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h5 class="project-title">Linkhub (Personal Project)</h5>
+            <p class="project-description">Link management app with folder creation, custom colors, and auto-sorting, built with Firebase Auth & Firestore.</p>
+            <div class="project-tags"><span>Flutter</span><span>Firebase</span></div>
+            <a href="https://github.com/vijaysingdobhal/Link_hub?tab=readme-ov-file" class="project-link" target="_blank">View on GitHub <i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 4 -->
+      <div class="col-md-6 animated-item">
+        <div class="project-card" data-tilt>
+          <div class="mobile-frame-container">
+            <div class="mobile-frame">
+              <img src="assets/projects/clone.jpg" class="mobile-screenshot" alt="Clone App Screenshot">
+              <div class="phone-notch"></div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h5 class="project-title">Clone App (Personal Project)</h5>
+            <p class="project-description">Photocopying app connecting users with shops via QR codes. Features file uploads and printing preferences.</p>
+            <div class="project-tags"><span>Flutter</span><span>Firebase</span><span>QR Code</span></div>
+            <a href="https://github.com/vijaysingdobhal" class="project-link" target="_blank">View on GitHub <i class="fab fa-github"></i></a>
+          </div>
 
-  <!-- FOOTER -->
-  <footer class="py-4 bg-dark text-center text-white-50">
-    <div class="container small">
-      © <span id="year"></span> Sunil Shinde · Java Developer
+
+</div>
+      </div>
     </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="py-5 bg-dark-section animated-section fade-in">
+    <div class="container">
+        <h2 class="section-title">Experience & Education</h2>
+        <div class="timeline">
+            <div class="timeline-item animated-item"><div class="timeline-content"><h5>Flutter Developer @ Omunim Software</h5><p class="timeline-date">March 2025 – Present</p><ul><li>Maintained & enhanced Online Munim and Jewellers apps; optimized performance & UX.</li><li>Collaborated with teams to ship new features and provide support.</li></ul></div></div>
+            <div class="timeline-item animated-item"><div class="timeline-content"><h5>Flutter Developer Intern @ AlgorithmCat</h5><p class="timeline-date">Jan 2025 – Feb 2025</p><ul><li>Developed real-time mobile apps using Flutter & Firebase.</li><li>Integrated REST APIs, authentication, and payment gateways.</li><li>Implemented Provider & Riverpod for scalable state management.</li></ul></div></div>
+            <div class="timeline-item animated-item"><div class="timeline-content"><h5>Freelance Flutter Developer</h5><p class="timeline-date">2024 – Present</p><ul><li>Delivered ERP, retail, and eCommerce apps; handled development, deployment, and support.</li></ul></div></div>
+            <div class="timeline-item education animated-item"><div class="timeline-content"><h5>Master of Computer Applications (MCA)</h5><p class="timeline-date">Sinhgad Institute, Pune | 2023 — 2025</p></div></div>
+        </div>
+    </div>
+  </section>
+  
+  <!-- Strengths & Certifications -->
+  <section id="strengths" class="container py-5 animated-section fade-in">
+    <div class="row g-5">
+      <div class="col-lg-6 animated-item">
+        <h2 class="section-title text-start">Core Strengths</h2>
+        <ul class="strengths-list">
+          <li><i class="fas fa-check-circle"></i>Problem-solving & Debugging</li>
+          <li><i class="fas fa-check-circle"></i>End-to-End App Delivery</li>
+          <li><i class="fas fa-check-circle"></i>Scalable Architecture Design</li>
+          <li><i class="fas fa-check-circle"></i>Client Communication</li>
+          <li><i class="fas fa-check-circle"></i>Proactive & Continuous Learning</li>
+        </ul>
+      </div>
+      <div class="col-lg-6 animated-item">
+        <h2 class="section-title text-start">Certifications</h2>
+        <div class="row g-3">
+          <div class="col-md-6"><div class="certification-card" data-tilt>Google Flutter Development <span>Udemy/Coursera</span></div></div>
+          <div class="col-md-6"><div class="certification-card" data-tilt>Firebase for Developers <span>Google</span></div></div>
+          <div class="col-md-6"><div class="certification-card" data-tilt>Database Management <span>Coursera</span></div></div>
+          <div class="col-md-6"><div class="certification-card" data-tilt>Prompt Engineering <span>AWS</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5 bg-dark-section text-center animated-section fade-in">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-subtitle mx-auto mb-4">I'm currently available for freelance projects and full-time opportunities. Have a project in mind, or just want to say hello? My inbox is always open.</p>
+      <a href="mailto:vijaydobhal12@gmail.com" class="btn btn-primary btn-lg"><span>Say Hello</span></a>
+    </div>
+  </section>
+
+
+<!-- Footer -->
+  <footer class="text-center py-4">
+    <div class="footer-socials">
+      <a href="https://github.com/vijaysingdobhal/README.md" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/vijaysing-dobhal-b7305b196/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="tel:+919511769008" aria-label="Phone"><i class="fas fa-phone"></i></a>
+    </div>
+    <p class="mb-0 mt-3">&copy; <span id="current-year"></span> Vijaysing Dobhal. Designed & Built with Passion.</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+  <script src="./script.js"></script>
 </body>
-
 </html>
